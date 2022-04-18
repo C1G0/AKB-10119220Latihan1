@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@drawable/round_corner_textview1"
+                android:paddingStart="24dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                app:drawableLeftCompat="@drawable/digi_logo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:drawablePadding="10dp"
+                app:drawableLeftCompat="@drawable/orang" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/judul_jam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/judul_jamker"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/jamker"
+                        android:layout_below="@id/judul_jam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_jamker"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textColor="@color/jam_kerja">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/jamker"
+                        android:layout_marginTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/round_corner_card_textview2"
+                        app:drawableRightCompat="@drawable/jam">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/bar1"
+                        android:layout_below="@+id/jamker"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:paddingStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_corner_card_textview1"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_130jam"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/text_batas_jamker"
+                        android:layout_below="@id/bar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/text_batasmin">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/text_checkin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/text_batas_jamker"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_corner_checkin"
+                        android:gravity="center"
+                        android:text="@string/button_checkin"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_corner_laporan"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/judul_laporan"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/judul_laporan"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/bulan_maret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bulan_maret"
+                            android:textColor="@color/color_bulan"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <View
+                            android:id="@+id/mrt_a1"
+                            android:layout_below="@+id/bulan_maret"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_a2"
+                            android:layout_toEndOf="@+id/mrt_a1"
+                            android:layout_below="@+id/bulan_maret"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_a3"
+                            android:layout_toEndOf="@+id/mrt_a2"
+                            android:layout_below="@+id/bulan_maret"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_a4"
+                            android:layout_toEndOf="@+id/mrt_a3"
+                            android:layout_below="@+id/bulan_maret"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_a5"
+                            android:layout_toEndOf="@+id/mrt_a4"
+                            android:layout_below="@+id/bulan_maret"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_b1"
+                            android:layout_below="@+id/mrt_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_b2"
+                            android:layout_toEndOf="@+id/mrt_b1"
+                            android:layout_below="@+id/mrt_a2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal3_1f">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_b3"
+                            android:layout_toEndOf="@+id/mrt_b2"
+                            android:layout_below="@+id/mrt_a3"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_b4"
+                            android:layout_toEndOf="@+id/mrt_b3"
+                            android:layout_below="@+id/mrt_a4"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_b5"
+                            android:layout_toEndOf="@+id/mrt_b4"
+                            android:layout_below="@+id/mrt_a5"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_c1"
+                            android:layout_below="@+id/mrt_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_c2"
+                            android:layout_toEndOf="@+id/mrt_c1"
+                            android:layout_below="@+id/mrt_b2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_c3"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_below="@+id/mrt_b3"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@+id/mrt_c2"
+                            android:background="@drawable/shape_cal4_c3">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_c4"
+                            android:layout_toEndOf="@+id/mrt_c3"
+                            android:layout_below="@+id/mrt_b4"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_c5"
+                            android:layout_toEndOf="@+id/mrt_c4"
+                            android:layout_below="@+id/mrt_b5"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal4_c3">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_d1"
+                            android:layout_below="@+id/mrt_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_d2"
+                            android:layout_toEndOf="@+id/mrt_d1"
+                            android:layout_below="@+id/mrt_c2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal3_1f">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_d3"
+                            android:layout_toEndOf="@+id/mrt_d2"
+                            android:layout_below="@+id/mrt_c3"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal4_c3">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_d4"
+                            android:layout_toEndOf="@+id/mrt_d3"
+                            android:layout_below="@+id/mrt_c4"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_d5"
+                            android:layout_toEndOf="@+id/mrt_d4"
+                            android:layout_below="@+id/mrt_c5"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_e1"
+                            android:layout_below="@+id/mrt_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_e2"
+                            android:layout_toEndOf="@+id/mrt_e1"
+                            android:layout_below="@+id/mrt_d2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_e3"
+                            android:layout_toEndOf="@+id/mrt_e2"
+                            android:layout_below="@+id/mrt_d2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_e4"
+                            android:layout_toEndOf="@+id/mrt_e3"
+                            android:layout_below="@+id/mrt_d2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_e5"
+                            android:layout_toEndOf="@+id/mrt_e4"
+                            android:layout_below="@+id/mrt_d2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_f1"
+                            android:layout_below="@+id/mrt_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal2_00">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_f2"
+                            android:layout_toEndOf="@+id/mrt_f1"
+                            android:layout_below="@+id/mrt_e2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_f3"
+                            android:layout_toEndOf="@+id/mrt_f2"
+                            android:layout_below="@+id/mrt_e2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_f4"
+                            android:layout_toEndOf="@+id/mrt_f3"
+                            android:layout_below="@+id/mrt_e2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_f5"
+                            android:layout_toEndOf="@+id/mrt_f4"
+                            android:layout_below="@+id/mrt_e2"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/mrt_g1"
+                            android:layout_below="@+id/mrt_f1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp">
+
+                        <TextView
+                            android:id="@+id/bulan_april"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bulan_april"
+                            android:textColor="@color/color_bulan"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <View
+                            android:id="@+id/apr_a1"
+                            android:layout_below="@+id/bulan_april"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_a2"
+                            android:layout_toEndOf="@+id/apr_a1"
+                            android:layout_below="@+id/bulan_april"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal7_06">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_a3"
+                            android:layout_toEndOf="@+id/apr_a2"
+                            android:layout_below="@+id/bulan_april"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal7_06">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_a4"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_below="@+id/bulan_april"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/apr_a3"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_a5"
+                            android:layout_toEndOf="@+id/apr_a4"
+                            android:layout_below="@+id/bulan_april"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_b1"
+                            android:layout_below="@+id/apr_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_b2"
+                            android:layout_toEndOf="@+id/apr_b1"
+                            android:layout_below="@+id/apr_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_b3"
+                            android:layout_toEndOf="@+id/apr_b2"
+                            android:layout_below="@+id/apr_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal7_06">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_b4"
+                            android:layout_toEndOf="@+id/apr_b3"
+                            android:layout_below="@+id/apr_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_b5"
+                            android:layout_toEndOf="@+id/apr_b4"
+                            android:layout_below="@+id/apr_a1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_c1"
+                            android:layout_below="@+id/apr_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal5_9b">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_c2"
+                            android:layout_toEndOf="@+id/apr_c1"
+                            android:layout_below="@+id/apr_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal7_06">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_c3"
+                            android:layout_toEndOf="@+id/apr_c2"
+                            android:layout_below="@+id/apr_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_c4"
+                            android:layout_toEndOf="@+id/apr_c3"
+                            android:layout_below="@+id/apr_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_c5"
+                            android:layout_toEndOf="@+id/apr_c4"
+                            android:layout_below="@+id/apr_b1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_d1"
+                            android:layout_below="@+id/apr_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_d2"
+                            android:layout_toEndOf="@+id/apr_d1"
+                            android:layout_below="@+id/apr_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_d3"
+                            android:layout_toEndOf="@+id/apr_d2"
+                            android:layout_below="@+id/apr_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_d4"
+                            android:layout_toEndOf="@+id/apr_d3"
+                            android:layout_below="@+id/apr_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal1_70">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_d5"
+                            android:layout_toEndOf="@+id/apr_d4"
+                            android:layout_below="@+id/apr_c1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_e1"
+                            android:layout_below="@+id/apr_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal6_16">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_e2"
+                            android:layout_toEndOf="@+id/apr_e1"
+                            android:layout_below="@+id/apr_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_e3"
+                            android:layout_toEndOf="@+id/apr_e2"
+                            android:layout_below="@+id/apr_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_e4"
+                            android:layout_toEndOf="@+id/apr_e3"
+                            android:layout_below="@+id/apr_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_e5"
+                            android:layout_toEndOf="@+id/apr_e4"
+                            android:layout_below="@+id/apr_d1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_f1"
+                            android:layout_below="@+id/apr_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_f2"
+                            android:layout_toEndOf="@+id/apr_f1"
+                            android:layout_below="@+id/apr_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_f3"
+                            android:layout_toEndOf="@+id/apr_f2"
+                            android:layout_below="@+id/apr_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_f4"
+                            android:layout_toEndOf="@+id/apr_f3"
+                            android:layout_below="@+id/apr_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+
+                        <View
+                            android:id="@+id/apr_f5"
+                            android:layout_toEndOf="@+id/apr_f4"
+                            android:layout_below="@+id/apr_e1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="2dp"
+                            android:background="@drawable/shape_cal8_g">
+                        </View>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="40dp"
+                android:padding="2dp">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/menu_izin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_izin"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/izin">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/menu_kehadiran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_kehadiran"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/kontak">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/menu_laporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_laporan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/buku">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/menu_agenda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_agenda"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/cal">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/menu_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="30dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_booking"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/buku">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/menu_wiki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="30dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_wiki"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:drawableTopCompat="@drawable/wiki">
+                    </TextView>
+
+                </GridLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

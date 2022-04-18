@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //textview1 - DigiTeam
+    <color name="textview1_color">#E6F6EC</color>
+
+    //textview3 - Jam Kerja
+    <color name="jam_kerja">#0d47a1</color>
+    <color name="jamker_bar1">#008444</color>
+    <color name="jamker_bar2">#16A75C</color>
+    <color name="checkin">#069550</color>
+
+    //textview4 - Laporan
+    <color name="color_bulan">#006430</color>
+    
+    //calendar
+    <color name="color_cal1">#70CD94</color>
+    <color name="color_cal2">#008444</color>
+    <color name="color_cal3">#1FB767</color>
+    <color name="color_cal4">#C3E9D0</color>
+    <color name="color_cal5">#9BDBB3</color>
+    <color name="color_cal6">#16A75C</color>
+    <color name="color_cal7">#069550</color>
+    <color name="color_cal8">#f5f5f5</color>
+</resources>

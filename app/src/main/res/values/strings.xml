@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">10119220Latihan1</string>
+    <string name="textView1">
+      <![CDATA[
+      <b>Digi Team</b>
+      Digital Together Everyone Achieve More
+      Jabar Digital Service
+      ]]>
+   </string>
+
+    //textview 3 - Jamker
+    <string name="judul_jamker">Jam Kerja Bulan Ini</string>
+    <string name="text_jamker">Jam Kerja Kamu Bulan Ini: 130.53 Jam</string>
+    <string name="text_130jam">130 Jam</string>
+    <string name="text_batasmin">Batas Minimum Jam Kerja 170 jam/bulan</string>
+    <string name="button_checkin">checkin</string>
+
+    //textview 4 - Laporan
+    <string name="judul_laporan">Laporan Kamu</string>
+    <string name="bulan_maret">Maret</string>
+    <string name="bulan_april">April</string>
+
+    //Menu
+    <string name="menu_izin">Izin</string>
+    <string name="menu_kehadiran">Kehadiran</string>
+    <string name="menu_laporan">Laporan</string>
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_booking">Booking</string>
+    <string name="menu_wiki">Wiki</string>
+</resources>

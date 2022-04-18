@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_card_textview1.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_card_textview2.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_checkin.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_laporan.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_textview1.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/round_corner_viewlaporan.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal1.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal1_70.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal2.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal2_00.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal3.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal3_1f.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal4.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal4_c3.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal5.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal5_9b.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal6_16.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal7_06.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/drawable/shape_cal8_g.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan12/app/src/main/res/drawable/round_corner_card_textview1.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan12/app/src/main/res/drawable/round_corner_card_textview2.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan12/app/src/main/res/drawable/round_corner_textview1.xml" value="0.1875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/10119220Latihan12/app/src/main/res/layout/activity_main.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
