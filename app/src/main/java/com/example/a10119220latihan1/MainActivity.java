@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         //textView1.setText(getString(R.string.textView1));
 
         textView1.setText(Html.fromHtml("<b>DigiTeam</b><br>" +
-                "Digital Together Everyone Achieve More" +
+                "Digital Together Everyone Achieve More<br>" +
                 "Jabar Digital Service"));
 
         textView2.setText(Html.fromHtml("<b>Dias Eka Fredianto, S.Kom, B.IT</b><br>" +
